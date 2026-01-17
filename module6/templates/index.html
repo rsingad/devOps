@@ -1,0 +1,62 @@
+<html></html>
+<head>
+    <title>Login Page</title>
+</head>
+<body>
+    <h1>Login Page</h1>
+    <h2>today is date is {{a}}</h2> 
+    <!-- jinja2 snippet kit extension -->
+    <p>wellcome to the signup page</p>
+    <form action="/login" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Login">
+    </form>
+</body>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 20px;
+    }
+    h1 {
+        color: #333;
+    }
+    form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    label {
+        display: inline-block;
+        width: 100px;
+    }
+    input[type="text"], input[type="password"] {
+        width: 200px;
+        padding: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+        p {
+        font-size: 16px;
+        color: #666;
+    }
+</style>
+</html>
